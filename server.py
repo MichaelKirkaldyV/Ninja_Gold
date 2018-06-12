@@ -46,7 +46,7 @@ def process_money():
 
 	elif building == 'casino':
 		if session['gold_count'] >= 50:
-			rand = random.randrange(-50, 51)
+			rand_num = random.randrange(-50, 51)
 			session['gold_count'] += rand
 			if rand_num < 0:
 				session['activities'].append(("You entered the" + building + "and lost" + str(rand_num))
