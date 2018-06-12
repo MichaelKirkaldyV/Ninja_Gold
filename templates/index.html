@@ -8,29 +8,51 @@
 	<div id="container">
 		<div id="header">
 			<form action="/process_money">
-				Your Gold: <input type="text" name="gold_count" class="gold_counter">
+				<label>
+					Your Gold:<input type="text" name="gold_count" class="gold_counter">
+				</label>
 			</form>
 		</div>
 		<div id="body">
-			<div id="farm">
-				
+			<div id="farm" class="option">
+				<h3>Farm</h3>
+				<h5>(earns 10-20 golds)</h5>
+				<form action="/process_money" method="post">
+					<input type="hidden" name="building" value="farm">
+					<input type="submit" name="find_gold" value="Find Gold">
+				</form>	
 			</div>
-			<div id="cave">
-				
+			<div id="cave" class="option">
+				<h3>Cave</h3>
+				<h5>(earns 5-10 golds)</h5>
+				<form action="/process_money" method="post">
+					<input type="hidden" name="building" value="cave">
+					<input type="submit" name="find_gold" value="Find Gold" class="button">
+				</form>	
 			</div>
-			<div id="house">
-				
+			<div id="house" class="option">
+				<h3>House</h3>
+				<h5>(earns 2-5 golds)</h5>	
+				<form action="/process_money" method="post">
+					<input type="hidden" name="building" value="house">
+					<input type="submit" name="find_gold" value="Find Gold" class="button">
+				</form>	
 			</div>
-			<div id="casino">
-				
+			<div id="casino" class="option">
+				<h3>Casino</h3>
+				<h5>(earns/takes 0-50 golds)</h5>
+				<form action="/process_money" method="post">
+					<input type="hidden" name="building" value="casino">
+					<input type="submit" name="find_gold" value="Find Gold" class="button">
+				</form>	
 			</div>
 		</div>
-
-		
-
-
-
-
+		<div id="footer">
+			<h4>Activities</h4>
+			<form>
+				<textarea></textarea>
+			</form>
+		</div>
 	</div>
 
 </body>

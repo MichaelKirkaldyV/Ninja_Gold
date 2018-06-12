@@ -1,15 +1,64 @@
 *{
 	padding: 0;
 	border: 0;
+	margin: 0 auto;
+}
+#container{
+	width: 1025px;
+	height: 570px;
+	background-color: #f3f3f3;
 }
 
 /*--------------HEADER----------------*/
 
-#container{
-	width: 800px;
-	height: 800px;
-	background-color: red;
-}
+
 .gold_counter{
 	margin-top: 25px;
 }
+label{
+	font-family: arial;
+}
+
+
+/*--------------BODY----------------*/
+
+#body{
+	width: 1025px;
+	height: 200px;
+}
+.option{
+	width: 200px;
+	height: 150px;
+	display: inline-block;
+	border: 5px solid black;
+	margin: 20px;
+	vertical-align: top;
+
+}
+h3,h5{
+	text-align: center;
+	font-family: arial;
+	margin-top: 20px;
+}
+
+form{
+	margin-left: 70px;
+	margin-top: 20px;
+}
+
+/*--------------FOOTER----------------*/
+
+#footer{
+	width: 1025px;
+	height: 200px;
+}
+h4{
+	margin-left: 50px;
+	font-family: arial;
+}
+textarea{
+	width: 900px;
+	height: 200px;
+	margin-top: 20px;
+}
+
