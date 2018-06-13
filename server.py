@@ -47,11 +47,12 @@ def process_money():
 	elif building == 'casino':
 		if session['gold_count'] >= 50:
 			rand_num = random.randrange(-50, 51)
-			session['gold_count'] += rand
+			#if the random number is negative, it'll be subtracted here, because it's a negative number. 
+			session['gold_count'] += rand_num
 			if rand_num < 0:
-				session['activities'].append(("You entered the" + building + "and lost" + str(rand_num))
+				session['activities'].append("You entered the" + " " + building + "and lost" + " "  + str(rand_num))
 			if rand_num >= 0:
-				session['activities'].append(("You entered the" + building + "and won" + str(rand_num))
+				session['activities'].append("You entered the" + " " +  building + "and won" + " " + str(rand_num))
  
 	return redirect('/')
 

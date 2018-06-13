@@ -7,11 +7,7 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<form action="/process_money">
-				<label>
-					Your Gold:<input type="text" name="gold_count" class="gold_counter">
-				</label>
-			</form>
+			<p>Your Gold: <span>{{session['gold_count']}}</span></p>
 		</div>
 		<div id="body">
 			<div id="farm" class="option">
@@ -50,7 +46,11 @@
 		<div id="footer">
 			<h4>Activities</h4>
 			<form>
-				<textarea id="activities"></textarea>
+				<textarea id="activities">{% for value in session['activities']:%}
+											{{session['activities']}}
+											{%endfor%}
+
+											</textarea>
 			</form>
 		</div>
 	</div>
